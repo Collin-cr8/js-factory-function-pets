@@ -63,7 +63,13 @@ const showPets = function (petArray) {
             status = "sleeping";
         }
         const li = document.createElement("li");
-        li.innerHTML = `<span class="pet-name"> ${this.name} </span> the ${this.species} is ${this.status} `;
+        li.innerHTML = `<span class="pet-name"> ${pet.name} </span> the ${pet.species} is ${status} `;
         pets.append(li);
     }
-}
+};
+
+//Add click event to make it happen!
+
+statusButton.addEventListener("click", function() {
+    showPets(allPets);
+});
