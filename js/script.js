@@ -35,7 +35,21 @@ const cleo = createPet("Cleo", "rat");
 const francine = createPet("Francine", "turtle");
 
 //console.log(sora, clover, baxter, cleo, francine);
-clover.sleep(); //changes isTired value to 1
-baxter.play(); //changes is tired value from 5 to 6
+//clover.sleep(); //changes isTired value to 1
+//baxter.play(); //changes is tired value from 5 to 6
 
 //console.log(clover, baxter);
+
+clover.isTired = 8;
+francine.isTired = 9;
+
+//create array including pet objects as elements
+const allPets = [
+    sora,
+    clover,
+    baxter,
+    cleo,
+    francine,
+];
+
+console.log(allPets);
