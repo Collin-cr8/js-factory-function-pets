@@ -33,3 +33,9 @@ const clover = createPet("Clover", "rabbit");
 const baxter = createPet("Baxter", "hamster");
 const cleo = createPet("Cleo", "rat");
 const francine = createPet("Francine", "turtle");
+
+//console.log(sora, clover, baxter, cleo, francine);
+clover.sleep(); //changes isTired value to 1
+baxter.play(); //changes is tired value from 5 to 6
+
+//console.log(clover, baxter);
