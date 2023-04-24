@@ -51,5 +51,19 @@ const allPets = [
     cleo,
     francine,
 ];
+//console.log(allPets);
 
-console.log(allPets);
+//Display pets in browser
+const showPets = function (petArray) {
+    pets.innerHTML = ""; //empty string clears list when showPets is run
+
+    for (let pet of petArray) {
+        let status = "Ready to play!";
+        if (pet.isTired >= 7) {
+            status = "sleeping";
+        }
+        const li = document.createElement("li");
+        li.innerHTML = `<span class="pet-name"> ${this.name} </span> the ${this.species} is ${this.status} `;
+        pets.append(li);
+    }
+}
